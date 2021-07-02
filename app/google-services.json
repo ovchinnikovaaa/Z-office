@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "599654375772",
+    "project_id": "zoffice-c68c8",
+    "storage_bucket": "zoffice-c68c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599654375772:android:d94ec9fd3cc11765fc6199",
+        "android_client_info": {
+          "package_name": "com.example.zoffice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599654375772-60vgk1d9dvuvk9t8trj6sd24ilm3a7sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0N1RMjy9OX_53TqiSyewJW3aMPhFn5Js"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599654375772-60vgk1d9dvuvk9t8trj6sd24ilm3a7sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

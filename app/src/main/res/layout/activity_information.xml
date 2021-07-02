@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/informationHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/informationHeadline"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/headlinesColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/lineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/informationHeadline"
+        android:layout_centerHorizontal="true" />
+
+    <!-- <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHorizontal"
+        android:layout_centerHorizontal="true"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true"
+        tools:ignore="MissingConstraints" /> -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHorizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/id"
+        android:textColor="@color/specialistsColor" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHorizontal"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:background="@drawable/custom_download_button"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/myRate"
+        android:textColor="@color/specialistsColor" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/rateType"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:textColor="@color/specialistsColor" />
+
+    <!-- Мои услуги -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/myServices"
+        android:textColor="@color/specialistsColor" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:lines="3"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:background="@drawable/custom_download_button"/>
+
+    <Button
+        android:id="@+id/servicesPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editText2"
+        android:text="@string/paymentServices"
+        android:background="@color/generateColor"
+        android:textColor="@color/whiteColor"
+        android:paddingHorizontal="115dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/servicesPayment"
+        android:background="@drawable/no_info_wtf2" />
+
+    <!-- Моя команда -->
+    <TextView
+        android:id="@+id/myTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageBar2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/myTeam"
+        android:textColor="@color/specialistsColor" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageBar2"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:lines="3"
+        android:layout_toEndOf="@id/myTeam"
+        android:layout_toRightOf="@id/myTeam"
+        android:layout_alignRight="@id/editText2"
+        android:background="@drawable/custom_download_button"/>
+
+    <!-- Оплата услуг 2 -->
+    <Button
+        android:id="@+id/servicesPayment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editText3"
+        android:text="@string/paymentServices"
+        android:background="@color/generateColor"
+        android:textColor="@color/whiteColor"
+        android:paddingHorizontal="115dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Какая-то непонятная штука 2 -->
+    <ImageView
+        android:id="@+id/imageBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/servicesPayment2"
+        android:background="@drawable/no_info_wtf3" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/backgroundColoredButtons">
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/accountingButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/accountingButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/personnelButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="@string/personnelButton"
+                    android:textColor="@color/whiteColor" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/economicsButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/economicsButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/financeButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/financeButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/marketingButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/marketingButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/taxesButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/taxesButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/secretariatButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/secretariatButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lawButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/lawButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/itButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/itButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/smmButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/smmButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/bottom_navigation_item_background_colors"
+        app:itemTextColor="@color/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation"
+        />
+
+</RelativeLayout>

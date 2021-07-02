@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="app_name">Z-office</string>
+
+    <string name="tasksButton">Задачи</string>
+    <string name="reportButton">Отчеты</string>
+    <string name="analyticsButton">Аналитика</string>
+    <string name="billButton">Счет</string>
+    
+    <!-- Layout: Main -->
+    <string name="accountingButton">Бухгалтерия</string>
+    <string name="personnelButton">Кадры</string>
+    <string name="economicsButton">Экономика</string>
+    <string name="financeButton">Финансы</string>
+    <string name="marketingButton">Маркетинг</string>
+    <string name="taxesButton">Налоги</string>
+    <string name="secretariatButton">Секретариат</string>
+    <string name="lawButton">Юр вопросы</string>
+    <string name="itButton">IT</string>
+    <string name="smmButton">SMM &amp; IM</string>
+
+
+    <!-- Layout: Tasks -->
+    <string name="tasksHeadline">ЗАДАЧИ</string>
+    <string name="spinner_title">Выбрать специалиста</string>
+    <string name="task_description">Сформировать бухгалетрский баланс</string>
+    <string name="taskDescription">ОПИСАНИЕ ЗАДАЧИ</string>
+    <string name="sendTask">Отправить задание</string>
+    <string name="attachDocument">Прикрепить документ</string>
+    <string name="chooseSpecialist">ВЫБРАТЬ СПЕЦИАЛИСТА</string>
+    <string name="sendDocument">Отправить документ</string>
+
+    <!-- Layout: Reports -->
+    <string name="reportsHeadline">ОТЧЕТЫ</string>
+    <string name="economic_activity">ОТЧЕТ ХОЗЯЙСТВЕННОЙ ДЕЯТЕЛЬНОСТИ</string>
+    <string name="financial_activity">ОТЧЕТ ФИНАНСОВОЙ ДЕЯТЕЛЬНОСТИ</string>
+    <string name="investment_activity">ОТЧЕТ ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ</string>
+    <string name="generate">Сформировать</string>
+    <string name="download">Загрузить</string>
+
+    <!-- Layout: Analytics -->
+    <string name="analyticsHeadline">АНАЛИТИКА</string>
+
+    <!-- Layout: Bill -->
+    <string name="billHeadline">СЧЕТ</string>
+
+    <string name="signOut">Выйти</string>
+
+    <string name="amountOfReceipts">Сумма поступлений средств в отчетном периоде</string>
+    <string name="expenseAmount">Сумма расхода средств в отчетном периоде</string>
+    <string name="remainingFunds">Остаток средств в отчетном периоде</string>
+
+    <string name="requestInformation">Запросить данные о контрагентах</string>
+
+    <!-- Layout: Chat -->
+    <string name="chatHeadline">ЧАТ</string>
+    <string name="startChat">Начать чат</string>
+    <string name="message">Сообщение</string>
+
+    <!-- Layout: Information -->
+    <string name="informationHeadline">ИНФОРМАЦИЯ</string>
+    <string name="id">ИДЕНТИФИКАТОР</string>
+    <string name="myRate">МОЙ ТАРИФ</string>
+    <string name="rateType">Базовый</string>
+    <string name="myServices">МОИ УСЛУГИ</string>
+    <string name="paymentServices">Оплата услуг</string>
+    <string name="myTeam">МОЯ КОМАНДА</string>
+    <string name="transactionHistory">История транзакций</string>
+
+    <!-- Layout: Settings -->
+    <string name="settingsHeadline">НАСТРОЙКИ</string>
+    <string name="webVersion">Перейти к веб-версии</string>
+    <string name="analyticsIndicators">ВЫБРАТЬ ПОКАЗАТЕЛИ ДЛЯ АНАЛИТИКИ</string>
+    <string name="setAnalyticsMetrics">Установить показатели аналитики</string>
+    <string name="downloadMemo">Скачать памятку по использованию</string>
+
+    <!-- Layout: Accounting -->
+    <string name="sendFile">Отправить файл</string>
+    <string name="accountingHeadline">БУХГАЛТЕРИЯ</string>
+    <string name="executionReport">ОТЧЕТ О ВЫПОЛНЕНИИ ЗАДАЧИ</string>
+    <string name="downloadDocument">Скачать документ</string>
+    <string name="specialistComment">Комментарий специалиста</string>
+
+    <!-- Layout: Alerts -->
+    <string name="alertsHeadline">ОПОВЕЩЕНИЯ</string>
+
+    <!-- Layout: Support -->
+    <string name="supportHeadline">ТЕХПОДДЕРЖКА</string>
+
+    <!-- Layout: Personnel -->
+    <string name="personnelHeadline">КАДРЫ</string>
+</resources>

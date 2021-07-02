@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonnelActivity">
+
+    <TextView
+        android:id="@+id/personnelHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personnelHeadline"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/headlinesColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/lineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/personnelHeadline"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/taskDes"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineHorizontal"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:text="@string/taskDescription"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editTaskText"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:gravity="top|left"
+        android:hint="@string/task_description"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/taskDes"
+        android:autofillHints=""
+        android:background="@drawable/custom_download_button" />
+
+    <Button
+        android:id="@+id/sendTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/generateColor"
+        android:textColor="@color/whiteColor"
+        android:layout_alignLeft="@id/editTaskText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/editTaskText"
+        android:text="@string/sendTask" />
+
+    <ImageButton
+        android:id="@+id/attachDocumentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTaskText"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/sendTaskButton"
+        android:layout_marginLeft="10dp"
+        android:background="@color/whiteColor"
+        android:src="@drawable/attach_document_bigger"
+        />
+
+    <EditText
+        android:id="@+id/editAttachFile"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sendTaskButton"
+        android:autofillHints=""
+        android:background="@drawable/custom_download_button" />
+
+    <Button
+        android:id="@+id/sendFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/generateColor"
+        android:textColor="@color/whiteColor"
+        android:layout_alignLeft="@id/editTaskText"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/editAttachFile"
+        android:text="@string/sendFile" />
+
+    <TextView
+        android:id="@+id/executionReport"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendFileButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:text="@string/executionReport"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/editDownloadFile"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/executionReport"
+        android:layout_alignLeft="@id/executionReport"
+        android:autofillHints=""
+        android:background="@drawable/custom_download_button" />
+
+    <Button
+        android:id="@+id/downloadFileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/generateColor"
+        android:textColor="@color/whiteColor"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="5dp"
+        android:layout_toRightOf="@id/editDownloadFile"
+        android:layout_below="@id/executionReport"
+        android:text="@string/downloadDocument"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/editDownloadFile"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/editSpecialistComment"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:layout_below="@id/editDownloadFile"
+        android:layout_alignLeft="@id/editDownloadFile"
+        android:autofillHints=""
+        android:background="@drawable/custom_download_button" />
+
+    <TextView
+        android:id="@+id/specialistComment"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloadFileButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@id/editSpecialistComment"
+        android:layout_toRightOf="@id/editSpecialistComment"
+        android:fontFamily="sans-serif"
+        android:text="@string/specialistComment"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/backgroundColoredButtons">
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/accountingButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/accountingButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/personnelButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"
+                    android:text="@string/personnelButton"
+                    android:textColor="@color/whiteColor" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/economicsButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/economicsButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/financeButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/financeButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/marketingButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/marketingButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/taxesButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/taxesButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/secretariatButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/secretariatButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lawButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/lawButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/itButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/itButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/smmButton"
+                    android:textColor="@color/whiteColor"
+                    android:background="@color/smmButtonColor"
+                    android:fontFamily="@font/roboto_condensed_regular"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/bottom_navigation_item_background_colors"
+        app:itemTextColor="@color/bottom_navigation_item_background_colors"
+        app:menu="@menu/menu_bottom_navigation"
+        tools:layout_editor_absoluteY="602dp" />
+
+</RelativeLayout>

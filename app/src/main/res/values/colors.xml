@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1E3FF</color>
+    <color name="colorPrimaryDark">#7833C0</color>
+    <color name="backgroundColor">#ffffff</color>
+    <color name="headlinesColor">#7838CB</color>
+    <color name="borderButtonColor">#7838CB</color>
+    <color name="specialistsColor">#555555</color>
+    <color name="blackColor">#000000</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="generateColor">#00B5DC</color>
+
+    <!-- Цвета кнопок внизу -->
+    <color name="accountingButtonColor">#772DB0</color>
+    <color name="personnelButtonColor">#6A2D80</color>
+    <color name="economicsButtonColor">#DC2776</color>
+    <color name="financeButtonColor">#F3311C</color>
+    <color name="marketingButtonColor">#E02324</color>
+    <color name="taxesButtonColor">#FF4319</color>
+    <color name="secretariatButtonColor">#FF7008</color>
+    <color name="lawButtonColor">#FF8B00</color>
+    <color name="itButtonColor">#A9CA17</color>
+    <color name="smmButtonColor">#009946</color>
+
+    <color name="backgroundColoredButtons">#F4EDFF</color>
+
+</resources>

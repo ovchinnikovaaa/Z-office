@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/icon_chat"
+        android:title="чат"/>
+    <item
+        android:id="@+id/action_alerts"
+        android:icon="@drawable/icon_alerts"
+        android:title="уведомления"/>
+    <item
+        android:id="@+id/action_information"
+        android:icon="@drawable/icon_info"
+        android:title="инфо" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/icon_settings"
+        android:title="настройки" />
+    <item
+        android:id="@+id/action_support"
+        android:icon="@drawable/icon_support"
+        android:title="поддержка" />
+</menu>
